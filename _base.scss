@@ -1,0 +1,61 @@
+@use 'fonts';
+@use 'colors';
+@use 'space';
+
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+
+  }
+
+  body {margin: 0;
+  font-family: $font-defaut;
+background-color: $primarycolor;
+font}
+/******************Base*************************/
+  /*body {
+    margin: 0;
+    font-family: fonts.$font-defaut;
+    background-color: colors.$primarycolor;
+    font-size: 18px;
+    color: colors.$secondarycolor;
+  }
+  
+  h1,
+  h2 {
+    font-family: fonts.$font-special;
+    font-weight: bold;
+    color: colors.$sec;
+    padding-left: space.$doublespace;
+  }
+  
+  h3 {
+    font-family: fonts.$font-special;
+    font-weight: normal;
+    color: colors.$secondary;
+    font-size: 28px;
+  }
+  
+  h1 {
+    font-size: 56px;
+    
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .Max__width {
+    max-width: 1100px;
+    margin: 0 auto;
+  }*/

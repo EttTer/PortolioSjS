@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="Header__menu">
+        <ul class="Header__menu__list">
+            <li class="Header__menu__item {{ 'Header__menu__item--active' if page.fileSlug === ''}}"><a href="/" class="Header__menu__link"> Home</a></li>
+            <li class="Header__menu__item {{ 'Header__menu__item--active' if page.fileSlug === 'tereza'}}"><a href="/tereza/" class="Header__menu__link">Tereza</a></li>
+            <li class="Header__menu__item {{ 'Header__menu__item--active' if page.fileSlug === 'education'}}"><a href="/education/" class="Header__menu__link"> Vzdělání</a></li>
+            <li class="Header__menu__item {{ 'Header__menu__item--active' if page.fileSlug === 'work'}}"><a href="/work/" class="Header__menu__link">Projekty</a></li>
+            <li class="Header__menu__item {{ 'Header__menu__item--active' if page.fileSlug === 'skills'}}"><a href="/skills/" class="Header__menu__link">Skills</a></li>
+            <li class="Header__menu__item {{ 'Header__menu__item--active' if page.fileSlug === 'contact'}}"><a href="/contact/" class="Header__menu__link">Kontakt</a></li>
+        </ul>
+    </nav>
+ <main>  
+    {{content | safe}} 
+ </main>
+
+<footer class="Footer">
+    <ul class="Footer__menu__list">
+        <li class="Footer__menu__item">Czech</li>
+        <li class="Footer__menu__item"><a href="https://terezaettlerovaenglish.netlify.app/" class="Header__menu__link">English</a></li>
+        
+    </ul>
+</footer>
+<script src="/js/fslightbox.js"></script>
+</body>
+</html>
