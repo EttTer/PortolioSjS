@@ -1,0 +1,3 @@
+
+$(".Portfolio__title").hide();
+
